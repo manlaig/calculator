@@ -246,8 +246,12 @@ public class CalculatorActivity extends AppCompatActivity
 
         else if (operator == "/")
         {
-            answer = x / y;
             String finalAnswer = new Double(answer).toString();
+            try {
+                answer = x / y;
+            } catch (ArithmeticException e){
+                text.setText("Undefined");
+            }
             text.setText(finalAnswer);
         }
 

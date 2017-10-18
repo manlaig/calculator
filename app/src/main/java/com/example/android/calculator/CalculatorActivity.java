@@ -6,7 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
-import static com.example.android.calculator.MainActivity.words;
+import static com.example.android.calculator.StorageActivity.words;
 
 public class CalculatorActivity extends AppCompatActivity
 {

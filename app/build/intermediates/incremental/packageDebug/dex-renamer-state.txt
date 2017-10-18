@@ -1,4 +1,4 @@
-#Thu Sep 14 21:56:12 PDT 2017
+#Wed Oct 18 00:03:45 PDT 2017
 base.0=D\:\\code\\Calculator2\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_359c744a0491b86daaf657630a24c9ffcb43ad40
 renamed.1=classes2.dex
 renamed.0=classes.dex

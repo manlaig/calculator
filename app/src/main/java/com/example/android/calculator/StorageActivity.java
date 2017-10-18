@@ -5,10 +5,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import static com.example.android.calculator.MainActivity.words;
+import java.util.ArrayList;
 
 public class StorageActivity extends AppCompatActivity
 {
+
+    public static ArrayList<Answer> words = new ArrayList<Answer>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState)

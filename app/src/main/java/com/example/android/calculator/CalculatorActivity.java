@@ -11,29 +11,28 @@ import static com.example.android.calculator.MainActivity.words;
 public class CalculatorActivity extends AppCompatActivity
 {
 
+    String number1 = "";
+    String number2 = "";
+    String operator = "";
+    double answer;
+    TextView text, clear;
+
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.calculator);
 
-        TextView text = (TextView) findViewById(R.id.text);
+        text = (TextView) findViewById(R.id.text);
         text.setText("0");
 
-        TextView clear = (TextView) findViewById(R.id.clear);
+        clear = (TextView) findViewById(R.id.clear);
         clear.setText("C");
     }
 
-    protected String number1 = "";
-    protected String number2 = "";
-    protected String operator = "";
-    protected double answer;
 
-    //TextView text = (TextView) findViewById(R.id.text);
     public void set1(View view)
     {
-        TextView text = (TextView) findViewById(R.id.text);
-
         if (operator == "")
         {
             number1  = number1 + "1";
@@ -50,9 +49,6 @@ public class CalculatorActivity extends AppCompatActivity
 
     public void set2(View view)
     {
-
-        TextView text = (TextView) findViewById(R.id.text);
-
         if (operator == "")
         {
             number1  = number1 + "2";
@@ -70,9 +66,6 @@ public class CalculatorActivity extends AppCompatActivity
 
     public void set3(View view)
     {
-
-        TextView text = (TextView) findViewById(R.id.text);
-
         if (operator == "")
         {
             number1  = number1 + "3";
@@ -90,9 +83,6 @@ public class CalculatorActivity extends AppCompatActivity
 
     public void set4(View view)
     {
-
-        TextView text = (TextView) findViewById(R.id.text);
-
         if (operator == "")
         {
             number1  = number1 + "4";
@@ -110,9 +100,6 @@ public class CalculatorActivity extends AppCompatActivity
 
     public void set5(View view)
     {
-
-        TextView text = (TextView) findViewById(R.id.text);
-
         if (operator == "")
         {
             number1  = number1 + "5";
@@ -130,9 +117,6 @@ public class CalculatorActivity extends AppCompatActivity
 
     public void set6(View view)
     {
-
-        TextView text = (TextView) findViewById(R.id.text);
-
         if (operator == "")
         {
             number1  = number1 + "6";
@@ -150,9 +134,6 @@ public class CalculatorActivity extends AppCompatActivity
 
     public void set0(View view)
     {
-
-        TextView text = (TextView) findViewById(R.id.text);
-
         if (operator == "")
         {
             number1  = number1 + "0";
@@ -170,9 +151,6 @@ public class CalculatorActivity extends AppCompatActivity
 
     public void set7(View view)
     {
-
-        TextView text = (TextView) findViewById(R.id.text);
-
         if (operator == "")
         {
             number1  = number1 + "7";
@@ -190,8 +168,6 @@ public class CalculatorActivity extends AppCompatActivity
 
     public void set8(View view)
     {
-
-        TextView text = (TextView) findViewById(R.id.text);
         if (operator == "")
         {
             number1  = number1 + "8";
@@ -209,9 +185,6 @@ public class CalculatorActivity extends AppCompatActivity
 
     public void set9(View view)
     {
-
-        TextView text = (TextView) findViewById(R.id.text);
-
         if (operator == "")
         {
             number1  = number1 + "9";
@@ -233,8 +206,6 @@ public class CalculatorActivity extends AppCompatActivity
         double x = Integer.parseInt(number1);  //this method transforms string to integer
         double y = Integer.parseInt(number2);  //for example, "123" to 123
 
-        TextView text = (TextView) findViewById(R.id.text);
-        TextView clear = (TextView) findViewById(R.id.clear);
         clear.setText("AC");
 
         if (operator == "X")
@@ -299,7 +270,6 @@ public class CalculatorActivity extends AppCompatActivity
 
     public void reset(View view)
     {                                               //This method is for the button "AC"
-        TextView text = (TextView) findViewById(R.id.text);
         text.setText("0");
 
         operator = "";
@@ -311,7 +281,6 @@ public class CalculatorActivity extends AppCompatActivity
 
     public void setFraction(View view)
     {
-
         if(operator == "")
         {
             number1 = number1 + ".";
@@ -321,13 +290,11 @@ public class CalculatorActivity extends AppCompatActivity
         {
             number2 = number2 + ".";
         }
-
     }
 
 
     public void percentage(View view)
     {                 //this method find the percentage
-        TextView text = (TextView) findViewById(R.id.text);
         double x = Integer.parseInt(number1);
 
         if(operator != "")
@@ -346,7 +313,6 @@ public class CalculatorActivity extends AppCompatActivity
 
     public void changeSign(View view)
     {
-        TextView text = (TextView) findViewById(R.id.text);
         double x = Integer.parseInt(number1);
         double y = Integer.parseInt(number2);
 

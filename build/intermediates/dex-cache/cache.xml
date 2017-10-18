@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="D:\code\Calculator2\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6fb6ac3e8d3b9013819920d9ea11f3803c4c0033">
+        <dex dex="D:\code\Calculator2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-25.1.0_6e7d4fc40ae57d5af31e196649d179dd8e36ac06\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\code\Calculator2\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
+        <dex dex="D:\code\Calculator2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-25.1.0_0353ec0d2db9d3e8ad2cf95a05def3f3acb3f7d9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\code\Calculator2\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="D:\code\Calculator2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.1.0_8b4ea65ab3e8e8a688975bd27a21b23250e94d86\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\manla\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.1.0\support-annotations-25.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="64cb6b229a8bdfd907bc8dd46839a0053e4c018d">
+        <dex dex="D:\code\Calculator2\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.1.0_8e0f145a4f6c69b670b545948ac998ff27f7f282\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\code\Calculator2\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="aee64634871d88a419d59eb743c1258a60f19700">
+        <dex dex="D:\code\Calculator2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-25.1.0_4d6ad29172983e982f5d4b3eb7c1af3d8e6f6fd8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\code\Calculator2\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a50c88826e66336ddb19c037b32caf3e55fbdaeb">
+        <dex dex="D:\code\Calculator2\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_1f8506f174bebbaaeccb7bcd72748cd982fbc74a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\code\Calculator2\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
+        <dex dex="D:\code\Calculator2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-25.1.0_7fdf4cc49a0b4ead425586c2d02cac60b99b6311\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\code\Calculator2\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="14aa2fe8ec42a04f3b35cd19d74edfc276e647f9">
+        <dex dex="D:\code\Calculator2\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_359c744a0491b86daaf657630a24c9ffcb43ad40\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\code\Calculator2\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
+        <dex dex="D:\code\Calculator2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.1.0_78a83cd8fe634b4815190be0cc72faa090d9aec4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\code\Calculator2\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
+        <dex dex="D:\code\Calculator2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-25.1.0_ac3ec9e793060f7fad0b2fa78ce1f4ff239ea6a2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\code\Calculator2\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
+        <dex dex="D:\code\Calculator2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-25.1.0_7cac6a2cecba00a978ff61a16434dacb7d5cd402\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\code\Calculator2\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
+        <dex dex="D:\code\Calculator2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.1.0_3a79b78dc20566adf0fa0ecf36af33c1cc98d889\classes.dex" />
+    </item>
+
+</items>

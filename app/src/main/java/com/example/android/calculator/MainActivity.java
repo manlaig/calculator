@@ -304,7 +304,7 @@ public class MainActivity extends AppCompatActivity
 
         else
         {
-            answer = x / 100;
+            answer = x / 100.0;
             text.setText(new Double(answer).toString());
         }
 

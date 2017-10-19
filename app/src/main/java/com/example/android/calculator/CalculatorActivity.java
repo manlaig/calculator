@@ -1,4 +1,4 @@
-package com.example.android.calculator;
+/*package com.example.android.calculator;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -354,3 +354,4 @@ public class CalculatorActivity extends AppCompatActivity
     }
 
 }
+*/

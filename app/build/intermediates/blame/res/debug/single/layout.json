@@ -60,10 +60,6 @@
         "source": "D:\\code\\Calculator2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout\\abc_list_menu_item_radio.xml"
     },
     {
-        "merged": "D:\\code\\Calculator2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\calculator.xml",
-        "source": "D:\\code\\Calculator2\\app\\src\\main\\res\\layout\\calculator.xml"
-    },
-    {
         "merged": "D:\\code\\Calculator2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_content_include.xml",
         "source": "D:\\code\\Calculator2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout\\abc_screen_content_include.xml"
     },

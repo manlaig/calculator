@@ -177,6 +177,7 @@ public class MainActivity extends AppCompatActivity
     public void reset(View view)
     {                                               //This method is for the button "AC"
         text.setText("0");
+        clear.setText("C");
         operator = "";
         number1 = "";
         number2 = "";
@@ -224,25 +225,17 @@ public class MainActivity extends AppCompatActivity
         if(operator == "")
         {
             if(x > 0)
-            {
                 number1 = "-" + number1;
-            }
-
             else
             {
                 //finish this part
                 //make it so that a negative number becomes positive
             }
         }
-
-
         else
         {
-            if(y > 0 )
-            {                    //this is checking if number is negative,
+            if(y > 0 )                      //this is checking if number is negative,
                 number2 = "-" + number2;    //if it is, then it turns it into a negative number.
-            }
-
             else
             {
                 //finish this part

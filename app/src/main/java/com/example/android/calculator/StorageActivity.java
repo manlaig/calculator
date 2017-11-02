@@ -27,7 +27,8 @@ public class StorageActivity extends AppCompatActivity
             TextView wordview = new TextView(this);
 
             wordview.setText(ans.getNumber1() + " " + ans.getOperator() + " " + ans.getNumber2() + " = " + answer);
-            wordview.setHeight(18);
+            //wordview.setHeight(18);
+            wordview.setTextSize(25);
             rootview.addView(wordview);
 
         }

@@ -115,7 +115,7 @@ public class MainActivity extends AppCompatActivity
 
         clear.setText("AC");
 
-        if (operator == "X")
+        if (operator == "*")
         {
             answer = x * y;
             text.setText(new Double(answer).toString());
@@ -164,7 +164,7 @@ public class MainActivity extends AppCompatActivity
 
     public void setMultiply(View view)
     {
-        operator = "X";
+        operator = "*";
     }
 
 

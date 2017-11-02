@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\code\Calculator2\app\src\main\AndroidManifest.xml:2:1-22:12
+ADDED from D:\code\Calculator2\app\src\main\AndroidManifest.xml:2:1-21:12
 	package
 		ADDED from D:\code\Calculator2\app\src\main\AndroidManifest.xml:3:5-45
 		INJECTED from D:\code\Calculator2\app\src\main\AndroidManifest.xml
@@ -14,7 +14,7 @@ ADDED from D:\code\Calculator2\app\src\main\AndroidManifest.xml:2:1-22:12
 		INJECTED from D:\code\Calculator2\app\src\main\AndroidManifest.xml
 		INJECTED from D:\code\Calculator2\app\src\main\AndroidManifest.xml
 application
-ADDED from D:\code\Calculator2\app\src\main\AndroidManifest.xml:5:5-20:19
+ADDED from D:\code\Calculator2\app\src\main\AndroidManifest.xml:5:5-19:19
 MERGED from [com.android.support:appcompat-v7:25.1.0] D:\code\Calculator2\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.0\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-v4:25.1.0] D:\code\Calculator2\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.0\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-fragment:25.1.0] D:\code\Calculator2\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.0\AndroidManifest.xml:25:5-20
@@ -48,14 +48,10 @@ category#android.intent.category.LAUNCHER
 ADDED from D:\code\Calculator2\app\src\main\AndroidManifest.xml:15:17-77
 	android:name
 		ADDED from D:\code\Calculator2\app\src\main\AndroidManifest.xml:15:27-74
-activity#com.example.android.calculator.CalculatorActivity
-ADDED from D:\code\Calculator2\app\src\main\AndroidManifest.xml:18:9-56
-	android:name
-		ADDED from D:\code\Calculator2\app\src\main\AndroidManifest.xml:18:19-53
 activity#com.example.android.calculator.StorageActivity
-ADDED from D:\code\Calculator2\app\src\main\AndroidManifest.xml:19:9-62
+ADDED from D:\code\Calculator2\app\src\main\AndroidManifest.xml:18:9-62
 	android:name
-		ADDED from D:\code\Calculator2\app\src\main\AndroidManifest.xml:19:19-50
+		ADDED from D:\code\Calculator2\app\src\main\AndroidManifest.xml:18:19-50
 uses-sdk
 INJECTED from D:\code\Calculator2\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:25.1.0] D:\code\Calculator2\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.0\AndroidManifest.xml:21:5-23:78

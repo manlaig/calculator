@@ -12,11 +12,11 @@ import static com.example.android.calculator.StorageActivity.words;
 public class MainActivity extends AppCompatActivity
 {
 
-    String number1 = "";
-    String number2 = "";
-    String operator = "";
-    double answer;
-    TextView text, clear;
+    private String number1 = "";
+    private String number2 = "";
+    private String operator = "";
+    private double answer;
+    private TextView text, clear;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -33,213 +33,117 @@ public class MainActivity extends AppCompatActivity
     }
 
 
-    public void set1(View view)
+    public void setNumber(String num)
     {
         if (operator == "")
         {
-            number1  = number1 + "1";
+            number1  = number1 + num;
             text.setText(number1);
         }
 
         else
         {
-            number2 = number2 + "1";
+            number2 = number2 + num;
             text.setText(number2);
         }
+    }
+
+    public void set1(View view)
+    {
+        setNumber("1");
     }
 
 
     public void set2(View view)
     {
-        if (operator == "")
-        {
-            number1  = number1 + "2";
-            text.setText(number1);
-        }
-
-        else
-        {
-            number2 = number2 + "2";
-            text.setText(number2);
-        }
-
+        setNumber("2");
     }
 
 
     public void set3(View view)
     {
-        if (operator == "")
-        {
-            number1  = number1 + "3";
-            text.setText(number1);
-        }
-
-        else
-        {
-            number2 = number2 + "3";
-            text.setText(number2);
-        }
-
+        setNumber("3");
     }
 
 
     public void set4(View view)
     {
-        if (operator == "")
-        {
-            number1  = number1 + "4";
-            text.setText(number1);
-        }
-
-        else
-        {
-            number2 = number2 + "4";
-            text.setText(number2);
-        }
-
+        setNumber("4");
     }
 
 
     public void set5(View view)
     {
-        if (operator == "")
-        {
-            number1  = number1 + "5";
-            text.setText(number1);
-        }
-
-        else
-        {
-            number2 = number2 + "5";
-            text.setText(number2);
-        }
-
+        setNumber("5");
     }
 
 
     public void set6(View view)
     {
-        if (operator == "")
-        {
-            number1  = number1 + "6";
-            text.setText(number1);
-        }
-
-        else
-        {
-            number2 = number2 + "6";
-            text.setText(number2);
-        }
-
+        setNumber("6");
     }
 
 
     public void set0(View view)
     {
-        if (operator == "")
-        {
-            number1  = number1 + "0";
-            text.setText(number1);
-        }
-
-        else
-        {
-            number2 = number2 + "0";
-            text.setText(number2);
-        }
-
+        setNumber("0");
     }
 
 
     public void set7(View view)
     {
-        if (operator == "")
-        {
-            number1  = number1 + "7";
-            text.setText(number1);
-        }
-
-        else
-        {
-            number2 = number2 + "7";
-            text.setText(number2);
-        }
-
+        setNumber("7");
     }
 
 
     public void set8(View view)
     {
-        if (operator == "")
-        {
-            number1  = number1 + "8";
-            text.setText(number1);
-        }
-
-        else
-        {
-            number2 = number2 + "8";
-            text.setText(number2);
-        }
-
+        setNumber("8");
     }
 
 
     public void set9(View view)
     {
-        if (operator == "")
-        {
-            number1  = number1 + "9";
-            text.setText(number1);
-        }
-
-        else
-        {
-            number2 = number2 + "9";
-            text.setText(number2);
-        }
-
+        setNumber("9");
     }
 
 
     public void result(View view)
     {                                   //its initiated when the user presses equals
-
-        double x = Integer.parseInt(number1);  //this method transforms string to integer
-        double y = Integer.parseInt(number2);  //for example, "123" to 123
+        int x = Integer.parseInt(number1);  //this method transforms string to integer
+        int y = Integer.parseInt(number2);  //for example, "123" to 123
 
         clear.setText("AC");
 
         if (operator == "X")
         {
             answer = x * y;
-            String finalAnswer = new Double(answer).toString();     //transforming int to string
-            text.setText(finalAnswer);                              //in order to set the text
+            text.setText(new Double(answer).toString());
         }
 
         else if (operator == "/")
         {
-            String finalAnswer = new Double(answer).toString();
-            try {
-                answer = x / y;
-            } catch (ArithmeticException e){
+            try
+            {
+                answer = x / (double) y;
+            } catch (ArithmeticException e)
+            {
                 text.setText("Undefined");
             }
-            text.setText(finalAnswer);
+
+            text.setText(new Double(answer).toString());
         }
 
         else if (operator == "+")
         {
             answer = x + y;
-            String finalAnswer = new Double(answer).toString();
-            text.setText(finalAnswer);
+            text.setText(new Double(answer).toString());
         }
 
         else if (operator == "-")
         {
             answer = x - y;
-            String finalAnswer = new Double(answer).toString();
-            text.setText(finalAnswer);
+            text.setText(new Double(answer).toString());
         }
 
         words.add(new Answer(number1, number2, operator, answer));
@@ -273,11 +177,10 @@ public class MainActivity extends AppCompatActivity
     public void reset(View view)
     {                                               //This method is for the button "AC"
         text.setText("0");
-
         operator = "";
         number1 = "";
         number2 = "";
-        answer = 0;
+        answer = 0.0;
     }
 
 

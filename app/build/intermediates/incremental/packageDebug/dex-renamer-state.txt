@@ -1,7 +1,4 @@
-#Sun Oct 22 23:32:07 PDT 2017
-base.0=D\:\\code\\Calculator2\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_359c744a0491b86daaf657630a24c9ffcb43ad40
-renamed.1=classes2.dex
+#Wed Nov 01 22:53:33 PDT 2017
+base.0=D\:\\code\\Calculator2\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
 renamed.0=classes.dex
-file.1=D\:\\code\\Calculator2\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_1f8506f174bebbaaeccb7bcd72748cd982fbc74a\\classes.dex
-base.1=D\:\\code\\Calculator2\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_1f8506f174bebbaaeccb7bcd72748cd982fbc74a
-file.0=D\:\\code\\Calculator2\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_359c744a0491b86daaf657630a24c9ffcb43ad40\\classes.dex
+file.0=D\:\\code\\Calculator2\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex

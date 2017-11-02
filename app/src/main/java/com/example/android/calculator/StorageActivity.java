@@ -17,20 +17,19 @@ public class StorageActivity extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.storage);
-        int i = 0;
 
-        while(i < words.size())
+        for(int i = 0; i < words.size(); i++)
         {
             Answer ans = words.get(i);
-            String answer = String.valueOf(ans.answer);
+            String answer = String.valueOf(ans.getAnswer());
 
             LinearLayout rootview = (LinearLayout) findViewById(R.id.storage);
             TextView wordview = new TextView(this);
 
-            wordview.setText(ans.number1 + " " + ans.operator + " " + ans.number2 + " = " + answer);
+            wordview.setText(ans.getNumber1() + " " + ans.getOperator() + " " + ans.getNumber2() + " = " + answer);
+            wordview.setHeight(18);
             rootview.addView(wordview);
 
-            i += 1;
         }
     }
 }

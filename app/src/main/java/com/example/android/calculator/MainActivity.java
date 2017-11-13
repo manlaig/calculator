@@ -9,6 +9,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import static com.example.android.calculator.StorageActivity.words;
+
 public class MainActivity extends AppCompatActivity
 {
 
@@ -27,9 +29,9 @@ public class MainActivity extends AppCompatActivity
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_main);
 
-        listView = (ListView) findViewById(R.id.listView);
-        arrayAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1);
-        listView.setAdapter(arrayAdapter);
+        //listView = (ListView) findViewById(R.id.listView);
+        //arrayAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, words);
+        //listView.setAdapter(arrayAdapter);
 
         text = (TextView) findViewById(R.id.text);
         text.setText("0");
@@ -148,8 +150,7 @@ public class MainActivity extends AppCompatActivity
             text.setText(new Double(answer).toString());
         }
 
-        //words.add(new Answer(number1, number2, operator, answer));
-        arrayAdapter.add(new Answer(number1, number2, operator, answer).toString());
+        words.add(new Answer(number1, number2, operator, answer));
 
     }
 

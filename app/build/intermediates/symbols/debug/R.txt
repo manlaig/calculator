@@ -585,6 +585,7 @@ int id info 0x7f0b0070
 int id line1 0x7f0b0075
 int id line3 0x7f0b0077
 int id listMode 0x7f0b0009
+int id listView 0x7f0b007a
 int id list_item 0x7f0b002b
 int id media_actions 0x7f0b0069
 int id middle 0x7f0b001c

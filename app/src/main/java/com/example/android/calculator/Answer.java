@@ -52,4 +52,9 @@ public class Answer
     public void setAnswer(double answer) {
         this.answer = answer;
     }
+
+    @Override
+    public String toString() {
+        return this.number1 + " " + this.operator + " " + this.number2 + " = " + this.answer;
+    }
 }

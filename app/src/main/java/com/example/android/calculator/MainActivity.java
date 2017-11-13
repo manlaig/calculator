@@ -9,8 +9,6 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import static com.example.android.calculator.StorageActivity.words;
-
 public class MainActivity extends AppCompatActivity
 {
 
@@ -30,7 +28,8 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
 
         listView = (ListView) findViewById(R.id.listView);
-        arrayAdapter = new ArrayAdapter<String>(this, );
+        arrayAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1);
+        listView.setAdapter(arrayAdapter);
 
         text = (TextView) findViewById(R.id.text);
         text.setText("0");
@@ -47,7 +46,6 @@ public class MainActivity extends AppCompatActivity
             number1  = number1 + num;
             text.setText(number1);
         }
-
         else
         {
             number2 = number2 + num;
@@ -127,7 +125,6 @@ public class MainActivity extends AppCompatActivity
             answer = x * y;
             text.setText(new Double(answer).toString());
         }
-
         else if (operator == "/")
         {
             try
@@ -140,20 +137,19 @@ public class MainActivity extends AppCompatActivity
 
             text.setText(new Double(answer).toString());
         }
-
         else if (operator == "+")
         {
             answer = x + y;
             text.setText(new Double(answer).toString());
         }
-
         else if (operator == "-")
         {
             answer = x - y;
             text.setText(new Double(answer).toString());
         }
 
-        words.add(new Answer(number1, number2, operator, answer));
+        //words.add(new Answer(number1, number2, operator, answer));
+        arrayAdapter.add(new Answer(number1, number2, operator, answer).toString());
 
     }
 

@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.Window;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import static com.example.android.calculator.StorageActivity.words;
@@ -17,6 +19,8 @@ public class MainActivity extends AppCompatActivity
     private String operator = "";
     private double answer;
     private TextView text, clear;
+    private ListView listView;
+    private ArrayAdapter<String> arrayAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -24,6 +28,9 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_main);
+
+        listView = (ListView) findViewById(R.id.listView);
+        arrayAdapter = new ArrayAdapter<String>(this, );
 
         text = (TextView) findViewById(R.id.text);
         text.setText("0");

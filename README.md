@@ -1,2 +1,2 @@
 # calculator_app
-This is my first Android app that I created for a practice.
+My first Android app, a Calculator. This app allows you to make calculations and saves your previous calculations in a storage file that you can access.

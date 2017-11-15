@@ -229,20 +229,17 @@ public class MainActivity extends AppCompatActivity
         if(operator == "")
         {
             if(firstNumber > 0)
-                number1.isNegative(true);
+                //number1.isNegative(true);
             else
-            {
-                number1.isPositive(true);
-            }
+                //TODO: fix this error
+                //number1.isPositive(true);
         }
         else
         {
             if(secondNumber > 0 )
-                number2.isNegative();
+                //number2.isNegative();
             else
-            {
-                number2.isPositive();
-            }
+                //number2.isPositive();
         }
     }
 

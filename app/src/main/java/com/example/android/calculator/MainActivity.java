@@ -116,9 +116,9 @@ public class MainActivity extends AppCompatActivity
 
 
     public void result(View view)
-    {                                   //its initiated when the user presses equals
-        int x = Integer.parseInt(number1);  //this method transforms string to integer
-        int y = Integer.parseInt(number2);  //for example, "123" to 123
+    {
+        int x = Integer.parseInt(number1);
+        int y = Integer.parseInt(number2);
 
         clear.setText("AC");
 
@@ -204,7 +204,7 @@ public class MainActivity extends AppCompatActivity
 
 
     public void percentage(View view)
-    {                 //this method find the percentage
+    {
         double x = Integer.parseInt(number1);
 
         if(operator != "")
@@ -223,27 +223,25 @@ public class MainActivity extends AppCompatActivity
 
     public void changeSign(View view)
     {
-        double x = Integer.parseInt(number1);
-        double y = Integer.parseInt(number2);
+        double firstNumber = Integer.parseInt(number1);
+        double secondNumber = Integer.parseInt(number2);
 
         if(operator == "")
         {
-            if(x > 0)
-                number1 = "-" + number1;
+            if(firstNumber > 0)
+                number1.isNegative(true);
             else
             {
-                //finish this part
-                //make it so that a negative number becomes positive
+                number1.isPositive(true);
             }
         }
         else
         {
-            if(y > 0 )                      //this is checking if number is negative,
-                number2 = "-" + number2;    //if it is, then it turns it into a negative number.
+            if(secondNumber > 0 )
+                number2.isNegative();
             else
             {
-                //finish this part
-                //make it so that negative number becomes positive
+                number2.isPositive();
             }
         }
     }

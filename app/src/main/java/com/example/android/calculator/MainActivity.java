@@ -9,10 +9,11 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import static com.example.android.calculator.StorageActivity.words;
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity
 {
+    public static ArrayList<Answer> words = new ArrayList<Answer>();
 
     private String number1 = "";
     private String number2 = "";
@@ -219,30 +220,6 @@ public class MainActivity extends AppCompatActivity
         }
 
     }
-
-
-    public void changeSign(View view)
-    {
-        double firstNumber = Integer.parseInt(number1);
-        double secondNumber = Integer.parseInt(number2);
-
-        if(operator == "")
-        {
-            if(firstNumber > 0)
-                //number1.isNegative(true);
-            else
-                //TODO: fix this error
-                //number1.isPositive(true);
-        }
-        else
-        {
-            if(secondNumber > 0 )
-                //number2.isNegative();
-            else
-                //number2.isPositive();
-        }
-    }
-
 
     public void toStorage(View view)
     {

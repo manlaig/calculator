@@ -28,7 +28,7 @@ public class CalculationAdapter extends ArrayAdapter<Answer> {
         convertView = ((Activity) getContext()).getLayoutInflater().inflate(android.R.layout.simple_list_item_1, null);
         Answer answerAtPosition = answersList.get(position);
         TextView textView = (TextView) convertView.findViewById(android.R.id.text1);
-        textView.setTextSize(30);
+        textView.setTextSize(22);
         textView.setTextColor(Color.BLACK);
         textView.setText(answerAtPosition.toString());
 

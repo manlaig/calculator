@@ -26,10 +26,10 @@ public class StorageActivity extends AppCompatActivity
             LinearLayout rootview = (LinearLayout) findViewById(R.id.storage);
             TextView wordview = new TextView(this);
 
-            wordview.setText(ans.getNumber1() + " " + ans.getOperator() + " " + ans.getNumber2() + " = " + answer);
+            //wordview.setText(ans.getNumber1() + " " + ans.getOperator() + " " + ans.getNumber2() + " = " + answer);
             //wordview.setHeight(18);
-            wordview.setTextSize(25);
-            rootview.addView(wordview);
+            //wordview.setTextSize(25);
+            //rootview.addView(wordview);
 
         }
     }

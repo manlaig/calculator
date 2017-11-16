@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity
     private double answer;
     private TextView text, clear;
     private ListView listView;
-    private CalculationAdapter<Answer> calculationAdapter;
+    private ArrayAdapter<Answer> calculationAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
 
         listView = (ListView) findViewById(R.id.listView);
-        calculationAdapter = new CalculationAdapter<>(this, android.R.layout.simple_list_item_1, words);
+        calculationAdapter = new CalculationAdapter(this, android.R.layout.simple_list_item_1, words);
         //listView.setAdapter(arrayAdapter);
 
         text = (TextView) findViewById(R.id.text);
@@ -151,7 +151,7 @@ public class MainActivity extends AppCompatActivity
             text.setText(new Double(answer).toString());
         }
 
-        words.add(new Answer(number1, number2, operator, answer));
+        calculationAdapter.add(new Answer(number1, number2, operator, answer));
 
     }
 

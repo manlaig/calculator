@@ -5,23 +5,19 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.Window;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity
 {
-    public static ArrayList<Answer> words = new ArrayList<Answer>();
+    public static ArrayList<Answer> words = new ArrayList<>();
 
     private String number1 = "";
     private String number2 = "";
     private String operator = "";
     private double answer;
     private TextView text, clear;
-    private ListView listView;
-    private ArrayAdapter<Answer> calculationAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -29,10 +25,6 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_main);
-
-        listView = (ListView) findViewById(R.id.listView);
-        calculationAdapter = new CalculationAdapter(this, android.R.layout.simple_list_item_1, words);
-        //listView.setAdapter(arrayAdapter);
 
         text = (TextView) findViewById(R.id.text);
         text.setText("0");
@@ -151,8 +143,8 @@ public class MainActivity extends AppCompatActivity
             text.setText(new Double(answer).toString());
         }
 
-        calculationAdapter.add(new Answer(number1, number2, operator, answer));
-
+        words.add(new Answer(number1, number2, operator, answer));
+        resetNumbers();
     }
 
     public void setPlus(View view)
@@ -179,14 +171,20 @@ public class MainActivity extends AppCompatActivity
     }
 
 
-    public void reset(View view)
-    {                                               //This method is for the button "AC"
-        text.setText("0");
-        clear.setText("C");
+    public void resetNumbers()
+    {
         operator = "";
         number1 = "";
         number2 = "";
         answer = 0.0;
+    }
+
+
+    public void resetAll(View view)
+    {                                               //This method is for the button "AC"
+        text.setText("0");
+        clear.setText("C");
+
     }
 
 
@@ -218,6 +216,7 @@ public class MainActivity extends AppCompatActivity
             answer = x / 100.0;
             text.setText(new Double(answer).toString());
         }
+        resetNumbers();
 
     }
 

@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity
     private double answer;
     private TextView text, clear;
     private ListView listView;
-    private ArrayAdapter<String> arrayAdapter;
+    private CalculationAdapter<Answer> calculationAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -30,8 +30,8 @@ public class MainActivity extends AppCompatActivity
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_main);
 
-        //listView = (ListView) findViewById(R.id.listView);
-        //arrayAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, words);
+        listView = (ListView) findViewById(R.id.listView);
+        calculationAdapter = new CalculationAdapter<>(this, android.R.layout.simple_list_item_1, words);
         //listView.setAdapter(arrayAdapter);
 
         text = (TextView) findViewById(R.id.text);

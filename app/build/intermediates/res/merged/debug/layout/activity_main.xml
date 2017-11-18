@@ -6,7 +6,6 @@
     tools:context="com.example.android.calculator.MainActivity"
     android:orientation="vertical">
 
-
     <TextView
         android:id="@+id/text"
         android:layout_width="match_parent"
@@ -15,15 +14,14 @@
         android:gravity="end"
         android:textSize="60sp"
         android:paddingTop="10dp"
-        android:textColor="#000000" />
-
+        android:textColor="#000000"
+        android:fontFamily="sans-serif-light"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:orientation="horizontal">
-
 
         <Button
             style="@style/signButtons"
@@ -32,7 +30,6 @@
             android:layout_marginBottom="-5.5dp"
             android:layout_marginTop="-5.5dp"
             android:onClick="resetAll" />
-
 
         <Button
             style="@style/signButtons"
@@ -43,7 +40,6 @@
             android:layout_marginTop="-5.5dp"
             android:onClick="goToStorage" />
 
-
         <Button
             style="@style/signButtons"
             android:text="%"
@@ -52,7 +48,6 @@
             android:layout_marginBottom="-5.5dp"
             android:layout_marginTop="-5.5dp"
             android:onClick="percentage" />
-
 
         <Button
             style="@style/signButtons"
@@ -65,19 +60,16 @@
 
     </LinearLayout>
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:orientation="horizontal">
 
-
         <Button
             style="@style/numberButtons"
             android:text="7"
             android:onClick="set7"/>
-
 
         <Button
             style="@style/numberButtons"
@@ -85,13 +77,11 @@
             android:layout_marginLeft="-5.5dp"
             android:onClick="set8"/>
 
-
         <Button
             style="@style/numberButtons"
             android:text="9"
             android:layout_marginLeft="-5.5dp"
             android:onClick="set9"/>
-
 
         <Button
             style="@style/signButtons"
@@ -104,19 +94,16 @@
 
     </LinearLayout>
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:orientation="horizontal">
 
-
         <Button
             style="@style/numberButtons"
             android:text="4"
             android:onClick="set4" />
-
 
         <Button
             style="@style/numberButtons"
@@ -124,14 +111,12 @@
             android:layout_marginLeft="-5.5dp"
             android:onClick="set5" />
 
-
         <Button
             style="@style/numberButtons"
             android:id="@+id/button5"
             android:layout_marginLeft="-5.5dp"
             android:onClick="set6"
             android:text="6" />
-
 
         <Button
             style="@style/signButtons"
@@ -144,19 +129,16 @@
 
     </LinearLayout>
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:orientation="horizontal">
 
-
         <Button
             style="@style/numberButtons"
             android:text="1"
             android:onClick="set1" />
-
 
         <Button
             style="@style/numberButtons"
@@ -164,14 +146,12 @@
             android:layout_marginLeft="-5.5dp"
             android:onClick="set2" />
 
-
         <Button
             style="@style/numberButtons"
             android:id="@+id/button6"
             android:layout_marginLeft="-5.5dp"
             android:onClick="set3"
             android:text="3" />
-
 
         <Button
             style="@style/signButtons"
@@ -184,13 +164,11 @@
 
     </LinearLayout>
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:orientation="horizontal">
-
 
         <Button
             style="@style/signButtons"
@@ -201,15 +179,14 @@
             android:layout_marginTop="-5dp"
             android:onClick="set0" />
 
-
         <Button
             style="@style/signButtons"
+            android:background="#82B1FF"
             android:text="."
             android:textSize="70sp"
             android:layout_marginLeft="-5.5dp"
             android:layout_marginTop="-5dp"
             android:onClick="setFraction"/>
-
 
         <Button
             style="@style/signButtons"

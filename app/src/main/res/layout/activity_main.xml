@@ -51,7 +51,7 @@
             android:layout_marginBottom="-5.5dp"
             android:layout_marginTop="-5.5dp"
             android:fontFamily="sans-serif-light"
-            android:onClick="toStorage"
+            android:onClick="goToStorage"
             android:background="#1565C0"
             android:id="@+id/button8" />
 

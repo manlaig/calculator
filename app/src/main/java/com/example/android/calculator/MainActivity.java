@@ -48,64 +48,7 @@ public class MainActivity extends AppCompatActivity
         }
     }
 
-    public void set1(View view)
-    {
-        setNumber("1");
-    }
 
-
-    public void set2(View view)
-    {
-        setNumber("2");
-    }
-
-
-    public void set3(View view)
-    {
-        setNumber("3");
-    }
-
-
-    public void set4(View view)
-    {
-        setNumber("4");
-    }
-
-
-    public void set5(View view)
-    {
-        setNumber("5");
-    }
-
-
-    public void set6(View view)
-    {
-        setNumber("6");
-    }
-
-
-    public void set0(View view)
-    {
-        setNumber("0");
-    }
-
-
-    public void set7(View view)
-    {
-        setNumber("7");
-    }
-
-
-    public void set8(View view)
-    {
-        setNumber("8");
-    }
-
-
-    public void set9(View view)
-    {
-        setNumber("9");
-    }
 
 
     public void result(View view)
@@ -220,10 +163,59 @@ public class MainActivity extends AppCompatActivity
 
     }
 
-    public void toStorage(View view)
+    public void goToStorage(View view)
     {
         Intent intent = new Intent(this, StorageActivity.class);
         startActivity(intent);
     }
 
+    public void set1(View view)
+    {
+        setNumber("1");
+    }
+
+    public void set2(View view)
+    {
+        setNumber("2");
+    }
+
+    public void set3(View view)
+    {
+        setNumber("3");
+    }
+
+    public void set4(View view)
+    {
+        setNumber("4");
+    }
+
+    public void set5(View view)
+    {
+        setNumber("5");
+    }
+
+    public void set6(View view)
+    {
+        setNumber("6");
+    }
+
+    public void set0(View view)
+    {
+        setNumber("0");
+    }
+
+    public void set7(View view)
+    {
+        setNumber("7");
+    }
+
+    public void set8(View view)
+    {
+        setNumber("8");
+    }
+
+    public void set9(View view)
+    {
+        setNumber("9");
+    }
 }

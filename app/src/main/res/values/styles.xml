@@ -7,5 +7,11 @@
         <item name="colorPrimaryDark">#1976D2</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+    <style name="numberButtons" parent="Widget.AppCompat.Button">
+        <item name="android:color">#82B1FF</item>
+    </style>
+    <style name="signButtons" parent="Widget.AppCompat.Button">
+        <item name="android:color">#1565C0</item>
+    </style>
 
 </resources>

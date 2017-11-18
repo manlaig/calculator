@@ -26,53 +26,41 @@
 
 
         <Button
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
+            style="@style/signButtons"
             android:id="@+id/clear"
             android:textSize="40sp"
             android:layout_marginBottom="-5.5dp"
             android:layout_marginTop="-5.5dp"
-            android:onClick="resetAll"
-            android:background="#1565C0" />
+            android:onClick="resetAll" />
 
 
         <Button
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
+            style="@style/signButtons"
             android:text="sto>"
             android:textSize="30sp"
             android:layout_marginLeft="-5.5dp"
             android:layout_marginBottom="-5.5dp"
             android:layout_marginTop="-5.5dp"
-            android:onClick="goToStorage"
-            android:background="#1565C0" />
+            android:onClick="goToStorage" />
 
 
         <Button
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
+            style="@style/signButtons"
             android:text="%"
             android:textSize="45sp"
             android:layout_marginLeft="-5.5dp"
             android:layout_marginBottom="-5.5dp"
             android:layout_marginTop="-5.5dp"
-            android:background="#1565C0"
             android:onClick="percentage" />
 
 
         <Button
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
+            style="@style/signButtons"
             android:text="/"
             android:textSize="45sp"
             android:layout_marginLeft="-5.5dp"
             android:layout_marginBottom="-5.5dp"
             android:layout_marginTop="-5.5dp"
-            android:background="#1565C0"
             android:onClick="setDivide" />
 
     </LinearLayout>
@@ -106,15 +94,12 @@
 
 
         <Button
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
+            style="@style/signButtons"
             android:text="X"
             android:textSize="35sp"
             android:layout_marginLeft="-5.5dp"
             android:layout_marginTop="-5dp"
             android:layout_marginBottom="-5.5dp"
-            android:background="#1565C0"
             android:onClick="setMultiply" />
 
     </LinearLayout>
@@ -149,16 +134,13 @@
 
 
         <Button
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
+            style="@style/signButtons"
             android:text="-"
             android:textSize="60sp"
             android:layout_marginLeft="-5.5dp"
             android:layout_marginBottom="-5.5dp"
             android:layout_marginTop="-5dp"
-            android:onClick="setMinus"
-            android:background="#1565C0" />
+            android:onClick="setMinus" />
 
     </LinearLayout>
 
@@ -192,15 +174,12 @@
 
 
         <Button
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
+            style="@style/signButtons"
             android:text="+"
             android:textSize="55sp"
             android:layout_marginLeft="-5.5dp"
             android:layout_marginTop="-5dp"
             android:layout_marginBottom="-5.5dp"
-            android:background="#1565C0"
             android:onClick="setPlus" />
 
     </LinearLayout>
@@ -214,8 +193,7 @@
 
 
         <Button
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
+            style="@style/signButtons"
             android:text="0"
             android:layout_weight="1.94"
             android:textSize="55sp"
@@ -225,26 +203,20 @@
 
 
         <Button
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
+            style="@style/signButtons"
             android:text="."
             android:textSize="70sp"
-            android:background="#82B1FF"
             android:layout_marginLeft="-5.5dp"
             android:layout_marginTop="-5dp"
             android:onClick="setFraction"/>
 
 
         <Button
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
+            style="@style/signButtons"
             android:text="="
             android:textSize="60sp"
             android:layout_marginLeft="-5.5dp"
             android:layout_marginTop="-5dp"
-            android:background="#1565C0"
             android:onClick="result"/>
 
     </LinearLayout>

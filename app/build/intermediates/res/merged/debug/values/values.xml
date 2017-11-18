@@ -1755,5 +1755,9 @@
     </style>
     <style name="signButtons" parent="Widget.AppCompat.Button">
         <item name="android:color">#1565C0</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:background">#1565C0</item>
     </style>
 </resources>

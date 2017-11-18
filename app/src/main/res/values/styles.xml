@@ -6,7 +6,6 @@
         <item name="colorPrimary">#2196F3</item>
         <item name="colorPrimaryDark">#1976D2</item>
         <item name="colorAccent">@color/colorAccent</item>
-        <item name="android:fontFamily">sans-serif-light</item>
     </style>
     <style name="numberButtons" parent="Widget.AppCompat.Button">
         <item name="android:background">#82B1FF</item>
@@ -16,9 +15,15 @@
         <item name="android:layout_marginTop">-5dp</item>
         <item name="android:layout_marginBottom">-5.5dp</item>
         <item name="android:textSize">55sp</item>
+        <item name="android:fontFamily">sans-serif-light</item>
     </style>
     <style name="signButtons" parent="Widget.AppCompat.Button">
         <item name="android:color">#1565C0</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:background">#1565C0</item>
+        <item name="android:fontFamily">sans-serif-light</item>
     </style>
 
 </resources>

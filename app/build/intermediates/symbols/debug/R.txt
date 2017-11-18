@@ -593,14 +593,14 @@ int id multiply 0x7f0b0014
 int id never 0x7f0b0020
 int id none 0x7f0b000e
 int id normal 0x7f0b000a
-int id notification_background 0x7f0b0072
+int id notification_background 0x7f0b0071
 int id notification_main_column 0x7f0b006c
 int id notification_main_column_container 0x7f0b006b
 int id parentPanel 0x7f0b0030
 int id progress_circular 0x7f0b0005
 int id progress_horizontal 0x7f0b0006
 int id radio 0x7f0b0040
-int id right_icon 0x7f0b0071
+int id right_icon 0x7f0b0072
 int id right_side 0x7f0b006d
 int id screen 0x7f0b0015
 int id scrollIndicatorDown 0x7f0b0036
@@ -1084,6 +1084,8 @@ int style Widget_AppCompat_Spinner_Underlined 0x7f08015c
 int style Widget_AppCompat_TextView_SpinnerItem 0x7f08015d
 int style Widget_AppCompat_Toolbar 0x7f08015e
 int style Widget_AppCompat_Toolbar_Button_Navigation 0x7f08015f
+int style numberButtons 0x7f080160
+int style signButtons 0x7f080161
 int[] styleable ActionBar { 0x7f010001, 0x7f010003, 0x7f010004, 0x7f010005, 0x7f010006, 0x7f010007, 0x7f010008, 0x7f010009, 0x7f01000a, 0x7f01000b, 0x7f01000c, 0x7f01000d, 0x7f01000e, 0x7f01000f, 0x7f010010, 0x7f010011, 0x7f010012, 0x7f010013, 0x7f010014, 0x7f010015, 0x7f010016, 0x7f010017, 0x7f010018, 0x7f010019, 0x7f01001a, 0x7f01001b, 0x7f01001c, 0x7f01001d, 0x7f01005b }
 int styleable ActionBar_background 10
 int styleable ActionBar_backgroundSplit 12

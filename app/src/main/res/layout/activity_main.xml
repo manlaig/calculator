@@ -190,18 +190,18 @@
 
 
         <Button
+            android:id="@+id/button5"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="6"
-            android:textSize="55sp"
+            android:layout_marginBottom="-5.5dp"
             android:layout_marginLeft="-5.5dp"
             android:layout_marginTop="-5dp"
+            android:layout_weight="1"
             android:background="#82B1FF"
-            android:layout_marginBottom="-5.5dp"
-            android:id="@+id/button5"
             android:fontFamily="sans-serif-light"
-            android:onClick="set6"/>
+            android:onClick="set6"
+            android:text="6"
+            android:textSize="55sp" />
 
 
         <Button

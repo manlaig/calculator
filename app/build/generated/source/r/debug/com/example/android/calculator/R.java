@@ -1911,14 +1911,14 @@ containing a value of this type.
         public static final int never=0x7f0b0020;
         public static final int none=0x7f0b000e;
         public static final int normal=0x7f0b000a;
-        public static final int notification_background=0x7f0b0072;
+        public static final int notification_background=0x7f0b0071;
         public static final int notification_main_column=0x7f0b006c;
         public static final int notification_main_column_container=0x7f0b006b;
         public static final int parentPanel=0x7f0b0030;
         public static final int progress_circular=0x7f0b0005;
         public static final int progress_horizontal=0x7f0b0006;
         public static final int radio=0x7f0b0040;
-        public static final int right_icon=0x7f0b0071;
+        public static final int right_icon=0x7f0b0072;
         public static final int right_side=0x7f0b006d;
         public static final int screen=0x7f0b0015;
         public static final int scrollIndicatorDown=0x7f0b0036;
@@ -2412,6 +2412,8 @@ containing a value of this type.
         public static final int Widget_AppCompat_TextView_SpinnerItem=0x7f08015d;
         public static final int Widget_AppCompat_Toolbar=0x7f08015e;
         public static final int Widget_AppCompat_Toolbar_Button_Navigation=0x7f08015f;
+        public static final int numberButtons=0x7f080160;
+        public static final int signButtons=0x7f080161;
     }
     public static final class styleable {
         /** Attributes that can be used with a ActionBar.

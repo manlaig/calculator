@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/calculator"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.android.calculator.MainActivity"
-    android:orientation="vertical"
-    android:background="#616161">
+    android:orientation="vertical">
 
 
     <TextView
@@ -17,8 +15,7 @@
         android:gravity="end"
         android:textSize="60sp"
         android:paddingTop="10dp"
-        android:textColor="#000000"
-        android:fontFamily="sans-serif-light"/>
+        android:textColor="#000000" />
 
 
     <LinearLayout
@@ -37,8 +34,7 @@
             android:layout_marginBottom="-5.5dp"
             android:layout_marginTop="-5.5dp"
             android:onClick="resetAll"
-            android:background="#1565C0"
-            android:fontFamily="sans-serif-light"/>
+            android:background="#1565C0" />
 
 
         <Button
@@ -50,10 +46,8 @@
             android:layout_marginLeft="-5.5dp"
             android:layout_marginBottom="-5.5dp"
             android:layout_marginTop="-5.5dp"
-            android:fontFamily="sans-serif-light"
             android:onClick="goToStorage"
-            android:background="#1565C0"
-            android:id="@+id/button8" />
+            android:background="#1565C0" />
 
 
         <Button
@@ -65,10 +59,8 @@
             android:layout_marginLeft="-5.5dp"
             android:layout_marginBottom="-5.5dp"
             android:layout_marginTop="-5.5dp"
-            android:id="@+id/button4"
             android:background="#1565C0"
-            android:onClick="percentage"
-            android:fontFamily="sans-serif-light"/>
+            android:onClick="percentage" />
 
 
         <Button
@@ -81,7 +73,6 @@
             android:layout_marginBottom="-5.5dp"
             android:layout_marginTop="-5.5dp"
             android:background="#1565C0"
-            android:fontFamily="sans-serif-light"
             android:onClick="setDivide" />
 
     </LinearLayout>
@@ -95,43 +86,22 @@
 
 
         <Button
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
+            style="@style/numberButtons"
             android:text="7"
-            android:textSize="55sp"
-            android:layout_marginTop="-5dp"
-            android:background="#82B1FF"
-            android:layout_marginBottom="-5.5dp"
-            android:fontFamily="sans-serif-light"
             android:onClick="set7"/>
 
 
         <Button
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
+            style="@style/numberButtons"
             android:text="8"
-            android:textSize="55sp"
             android:layout_marginLeft="-5.5dp"
-            android:layout_marginTop="-5dp"
-            android:background="#82B1FF"
-            android:layout_marginBottom="-5.5dp"
-            android:fontFamily="sans-serif-light"
             android:onClick="set8"/>
 
 
         <Button
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
+            style="@style/numberButtons"
             android:text="9"
-            android:textSize="55sp"
-            android:background="#82B1FF"
             android:layout_marginLeft="-5.5dp"
-            android:layout_marginTop="-5dp"
-            android:layout_marginBottom="-5.5dp"
-            android:fontFamily="sans-serif-light"
             android:onClick="set9"/>
 
 
@@ -144,10 +114,7 @@
             android:layout_marginLeft="-5.5dp"
             android:layout_marginTop="-5dp"
             android:layout_marginBottom="-5.5dp"
-            android:id="@+id/button2"
-
             android:background="#1565C0"
-            android:fontFamily="sans-serif-light"
             android:onClick="setMultiply" />
 
     </LinearLayout>
@@ -161,47 +128,24 @@
 
 
         <Button
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
+            style="@style/numberButtons"
             android:text="4"
-            android:background="#82B1FF"
-            android:textSize="55sp"
-            android:layout_marginTop="-5dp"
-            android:layout_marginBottom="-5.5dp"
-            android:id="@+id/button3"
-            android:onClick="set4"
-            android:fontFamily="sans-serif-light"/>
+            android:onClick="set4" />
 
 
         <Button
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
+            style="@style/numberButtons"
             android:text="5"
-            android:background="#82B1FF"
-            android:textSize="55sp"
             android:layout_marginLeft="-5.5dp"
-            android:layout_marginTop="-5dp"
-            android:onClick="set5"
-            android:layout_marginBottom="-5.5dp"
-            android:fontFamily="sans-serif-light"
-            android:id="@+id/button" />
+            android:onClick="set5" />
 
 
         <Button
+            style="@style/numberButtons"
             android:id="@+id/button5"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="-5.5dp"
             android:layout_marginLeft="-5.5dp"
-            android:layout_marginTop="-5dp"
-            android:layout_weight="1"
-            android:background="#82B1FF"
-            android:fontFamily="sans-serif-light"
             android:onClick="set6"
-            android:text="6"
-            android:textSize="55sp" />
+            android:text="6" />
 
 
         <Button
@@ -213,10 +157,8 @@
             android:layout_marginLeft="-5.5dp"
             android:layout_marginBottom="-5.5dp"
             android:layout_marginTop="-5dp"
-            android:fontFamily="sans-serif-light"
             android:onClick="setMinus"
-            android:background="#1565C0"
-            android:id="@+id/button9" />
+            android:background="#1565C0" />
 
     </LinearLayout>
 
@@ -229,46 +171,24 @@
 
 
         <Button
-            android:layout_width="0dp"
-            android:id="@+id/button1"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="#82B1FF"
+            style="@style/numberButtons"
             android:text="1"
-            android:textSize="55sp"
-            android:layout_marginTop="-5dp"
-            android:layout_marginBottom="-5.5dp"
-            android:onClick="set1"
-            android:fontFamily="sans-serif-light"/>
+            android:onClick="set1" />
 
 
         <Button
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
+            style="@style/numberButtons"
             android:text="2"
-            android:textSize="55sp"
-            android:background="#82B1FF"
             android:layout_marginLeft="-5.5dp"
-            android:layout_marginTop="-5dp"
-            android:layout_marginBottom="-5.5dp"
-            android:onClick="set2"
-            android:fontFamily="sans-serif-light"/>
+            android:onClick="set2" />
 
 
         <Button
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="3"
-            android:textSize="55sp"
-            android:background="#82B1FF"
-            android:layout_marginLeft="-5.5dp"
-            android:layout_marginTop="-5dp"
-            android:layout_marginBottom="-5.5dp"
+            style="@style/numberButtons"
             android:id="@+id/button6"
+            android:layout_marginLeft="-5.5dp"
             android:onClick="set3"
-            android:fontFamily="sans-serif-light"/>
+            android:text="3" />
 
 
         <Button
@@ -280,10 +200,8 @@
             android:layout_marginLeft="-5.5dp"
             android:layout_marginTop="-5dp"
             android:layout_marginBottom="-5.5dp"
-            android:fontFamily="sans-serif-light"
             android:background="#1565C0"
-            android:onClick="setPlus"
-            android:id="@+id/button7" />
+            android:onClick="setPlus" />
 
     </LinearLayout>
 
@@ -303,8 +221,7 @@
             android:textSize="55sp"
             android:background="#82B1FF"
             android:layout_marginTop="-5dp"
-            android:onClick="set0"
-            android:fontFamily="sans-serif-light"/>
+            android:onClick="set0" />
 
 
         <Button
@@ -316,7 +233,6 @@
             android:background="#82B1FF"
             android:layout_marginLeft="-5.5dp"
             android:layout_marginTop="-5dp"
-            android:fontFamily="sans-serif-light"
             android:onClick="setFraction"/>
 
 
@@ -328,7 +244,6 @@
             android:textSize="60sp"
             android:layout_marginLeft="-5.5dp"
             android:layout_marginTop="-5dp"
-            android:fontFamily="sans-serif-light"
             android:background="#1565C0"
             android:onClick="result"/>
 

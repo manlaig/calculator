@@ -1,14 +1,11 @@
 package com.example.android.calculator;
 
-import java.util.ArrayList;
-
 /**
  * Created by manla on 8/5/2017.
  */
 
 public class Answer
 {
-    public static ArrayList<Answer> words = new ArrayList<>();
     private String number1;
     private String number2;
     private String operator;

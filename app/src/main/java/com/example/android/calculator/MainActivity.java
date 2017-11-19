@@ -6,13 +6,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.Window;
 import android.widget.TextView;
-
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity
 {
     public static ArrayList<Answer> words = new ArrayList<>();
-
     private String number1 = "";
     private String number2 = "";
     private String operator = "";
@@ -48,43 +46,31 @@ public class MainActivity extends AppCompatActivity
         }
     }
 
-
-
-
     public void result(View view)
     {
-        int x = Integer.parseInt(number1);
-        int y = Integer.parseInt(number2);
+        double x = Double.parseDouble(number1);
+        double y = Double.parseDouble(number2);
 
         clear.setText("AC");
 
+        if(number1 != "" && number2 != "")
+            return;
+
         if (operator == "*")
-        {
             answer = x * y;
-            text.setText(new Double(answer).toString());
-        }
-        else if (operator == "/")
-        {
-            try
-            {
+        else if (operator == "/") {
+            try {
                 answer = x / (double) y;
-            } catch (ArithmeticException e)
-            {
+            } catch (ArithmeticException e) {
                 text.setText("Undefined");
             }
-
-            text.setText(new Double(answer).toString());
         }
         else if (operator == "+")
-        {
             answer = x + y;
-            text.setText(new Double(answer).toString());
-        }
         else if (operator == "-")
-        {
             answer = x - y;
-            text.setText(new Double(answer).toString());
-        }
+
+        text.setText(new Double(answer).toString());
 
         words.add(new Answer(number1, number2, operator, answer));
         resetNumbers();
@@ -95,24 +81,20 @@ public class MainActivity extends AppCompatActivity
         operator = "+";
     }
 
-
     public void setMinus(View view)
     {
         operator = "-";
     }
-
 
     public void setMultiply(View view)
     {
         operator = "*";
     }
 
-
     public void setDivide(View view)
     {
         operator = "/";
     }
-
 
     public void resetNumbers()
     {
@@ -122,7 +104,6 @@ public class MainActivity extends AppCompatActivity
         answer = 0.0;
     }
 
-
     public void resetAll(View view)
     {                                               //This method is for the button "AC"
         text.setText("0");
@@ -130,30 +111,20 @@ public class MainActivity extends AppCompatActivity
 
     }
 
-
     public void setFraction(View view)
     {
         if(operator == "")
-        {
             number1 = number1 + ".";
-        }
-
         else
-        {
             number2 = number2 + ".";
-        }
     }
-
 
     public void percentage(View view)
     {
         double x = Integer.parseInt(number1);
 
         if(operator != "")
-        {
             text.setText("Error!");
-        }
-
         else
         {
             answer = x / 100.0;

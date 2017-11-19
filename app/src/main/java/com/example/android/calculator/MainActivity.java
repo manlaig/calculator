@@ -11,9 +11,7 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity
 {
     public static ArrayList<Answer> words = new ArrayList<>();
-    private String number1 = "";
-    private String number2 = "";
-    private String operator = "";
+    private String number1 = "", number2 = "", operator = "";
     private double answer;
     private TextView text, clear;
 
@@ -30,7 +28,6 @@ public class MainActivity extends AppCompatActivity
         clear = (TextView) findViewById(R.id.clear);
         clear.setText("C");
     }
-
 
     public void setNumber(String num)
     {
@@ -108,7 +105,6 @@ public class MainActivity extends AppCompatActivity
     {                                               //This method is for the button "AC"
         text.setText("0");
         clear.setText("C");
-
     }
 
     public void setFraction(View view)
@@ -131,13 +127,11 @@ public class MainActivity extends AppCompatActivity
             text.setText(new Double(answer).toString());
         }
         resetNumbers();
-
     }
 
-    public void goToStorage(View view)
+    public void goToStorageActivity(View view)
     {
-        Intent intent = new Intent(this, StorageActivity.class);
-        startActivity(intent);
+        startActivity(new Intent(this, StorageActivity.class));
     }
 
     public void set1(View view)

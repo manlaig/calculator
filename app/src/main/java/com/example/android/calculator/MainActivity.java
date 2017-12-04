@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity
 {
-    public static ArrayList<Answer> words = new ArrayList<>();
+    ArrayList<Answer> words = new ArrayList<>();
     private String number1 = "", number2 = "", operator = "";
     private double answer;
     private TextView text, clear;

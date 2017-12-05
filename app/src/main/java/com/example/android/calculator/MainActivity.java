@@ -29,20 +29,6 @@ public class MainActivity extends AppCompatActivity
         clear.setText("C");
     }
 
-    public void setNumber(String num)
-    {
-        if (operator == "")
-        {
-            number1  = number1 + num;
-            text.setText(number1);
-        }
-        else
-        {
-            number2 = number2 + num;
-            text.setText(number2);
-        }
-    }
-
     public void result(View view)
     {
         double x = Double.parseDouble(number1);
@@ -57,8 +43,8 @@ public class MainActivity extends AppCompatActivity
             answer = x * y;
         else if (operator == "/") {
             try {
-                answer = x / (double) y;
-            } catch (ArithmeticException e) {
+                answer = x / y;
+            } catch (Exception e) {
                 text.setText("Undefined");
             }
         }
@@ -71,26 +57,6 @@ public class MainActivity extends AppCompatActivity
 
         words.add(new Answer(number1, number2, operator, answer));
         resetNumbers();
-    }
-
-    public void setPlus(View view)
-    {
-        operator = "+";
-    }
-
-    public void setMinus(View view)
-    {
-        operator = "-";
-    }
-
-    public void setMultiply(View view)
-    {
-        operator = "*";
-    }
-
-    public void setDivide(View view)
-    {
-        operator = "/";
     }
 
     public void resetNumbers()
@@ -132,6 +98,26 @@ public class MainActivity extends AppCompatActivity
     public void goToStorageActivity(View view)
     {
         startActivity(new Intent(this, StorageActivity.class));
+    }
+
+    public void setPlus(View view)
+    {
+        operator = "+";
+    }
+
+    public void setMinus(View view)
+    {
+        operator = "-";
+    }
+
+    public void setMultiply(View view)
+    {
+        operator = "*";
+    }
+
+    public void setDivide(View view)
+    {
+        operator = "/";
     }
 
     public void set1(View view)
@@ -183,4 +169,19 @@ public class MainActivity extends AppCompatActivity
     {
         setNumber("9");
     }
+
+    public void setNumber(String num)
+    {
+        if (operator == "")
+        {
+            number1  += num;
+            text.setText(number1);
+        }
+        else
+        {
+            number2 += num;
+            text.setText(number2);
+        }
+    }
+
 }

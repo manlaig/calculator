@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity
 {
-    ArrayList<Answer> words = new ArrayList<>();
+    private static ArrayList<Answer> words = new ArrayList<>();
     private String number1 = "", number2 = "", operator = "";
     private double answer;
     private TextView text, clear;
@@ -98,6 +98,11 @@ public class MainActivity extends AppCompatActivity
     public void goToStorageActivity(View view)
     {
         startActivity(new Intent(this, StorageActivity.class));
+    }
+
+    public static ArrayList<Answer> getWordsArray()
+    {
+        return words;
     }
 
     public void setPlus(View view)

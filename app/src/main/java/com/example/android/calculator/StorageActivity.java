@@ -14,7 +14,7 @@ public class StorageActivity extends AppCompatActivity
         setContentView(R.layout.storage);
 
         ListView listView = (ListView) findViewById(R.id.listView);
-        ArrayAdapter<Answer> calculationAdapter = new CalculationAdapter(this, android.R.layout.simple_list_item_1, MainActivity.words);
+        ArrayAdapter<Answer> calculationAdapter = new CalculationAdapter(this, android.R.layout.simple_list_item_1, MainActivity.getWordsArray());
         listView.setAdapter(calculationAdapter);
     }
 }

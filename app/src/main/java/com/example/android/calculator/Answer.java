@@ -1,13 +1,15 @@
 package com.example.android.calculator;
 
 /**
- * Created by manla on 8/5/2017.
+ * Created by manlai on 8/5/2017.
  */
 
 public class Answer
 {
     private String number1, number2, operator;
     private double answer;
+
+    public Answer() {}
 
     public Answer(String mNumber1, String mNumber2, String mOperator, double mAnswer)
     {

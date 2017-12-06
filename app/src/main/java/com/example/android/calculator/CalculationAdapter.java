@@ -11,7 +11,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 /**
- * Created by manla on 11/15/2017.
+ * Created by manlai on 11/15/2017.
  */
 
 public class CalculationAdapter extends ArrayAdapter<Answer> {

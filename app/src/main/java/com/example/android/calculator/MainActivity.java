@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity
         resetNumbers();
     }
 
-    public void resetNumbers()
+    private void resetNumbers()
     {
         operator = "";
         number1 = "";
@@ -175,7 +175,7 @@ public class MainActivity extends AppCompatActivity
         setNumber("9");
     }
 
-    public void setNumber(String num)
+    private void setNumber(String num)
     {
         if (operator == "")
         {

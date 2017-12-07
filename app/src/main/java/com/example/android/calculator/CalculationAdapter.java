@@ -18,13 +18,15 @@ public class CalculationAdapter extends ArrayAdapter<Answer> {
 
     private ArrayList<Answer> answersList;
 
-    public CalculationAdapter(Context context, int resource, ArrayList<Answer> objects) {
+    public CalculationAdapter(Context context, int resource, ArrayList<Answer> objects)
+    {
         super(context, resource, objects);
         answersList = objects;
     }
 
     @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
+    public View getView(int position, View convertView, ViewGroup parent)
+    {
         convertView = ((Activity) getContext()).getLayoutInflater().inflate(android.R.layout.simple_list_item_1, null);
         Answer answerAtPosition = answersList.get(position);
         TextView textView = (TextView) convertView.findViewById(android.R.id.text1);

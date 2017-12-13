@@ -24,7 +24,6 @@ public class MainActivity extends AppCompatActivity
 
         text = (TextView) findViewById(R.id.text);
         text.setText("0");
-
         clear = (TextView) findViewById(R.id.clear);
         clear.setText("C");
     }
@@ -85,7 +84,7 @@ public class MainActivity extends AppCompatActivity
     {
         double x = Integer.parseInt(number1);
 
-        if(operator.equals(""))
+        if(operator != "")
             text.setText("Error!");
         else
         {
@@ -177,7 +176,7 @@ public class MainActivity extends AppCompatActivity
 
     private void setNumber(String num)
     {
-        if (operator == "")
+        if (operator.equals(""))
         {
             number1  += num;
             text.setText(number1);
@@ -188,5 +187,4 @@ public class MainActivity extends AppCompatActivity
             text.setText(number2);
         }
     }
-
 }

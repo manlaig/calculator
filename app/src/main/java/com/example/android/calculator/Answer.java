@@ -22,6 +22,6 @@ public class Answer
     @Override
     public String toString()
     {
-        return this.number1 + " " + this.operator + " " + this.number2 + " = " + this.answer;
+        return number1 + " " + operator + " " + number2 + " = " + answer;
     }
 }

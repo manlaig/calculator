@@ -68,14 +68,14 @@ public class MainActivity extends AppCompatActivity
     }
 
     public void resetAll(View view)
-    {                                               //This method is for the button "AC"
+    {
         text.setText("0");
         clear.setText("C");
     }
 
     public void setFraction(View view)
     {
-        if(operator == "")
+        if(operator.equals(""))
             number1 = number1 + ".";
         else
             number2 = number2 + ".";
@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity
     {
         double x = Integer.parseInt(number1);
 
-        if(operator != "")
+        if(operator.equals(""))
             text.setText("Error!");
         else
         {

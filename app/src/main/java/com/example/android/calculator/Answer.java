@@ -20,7 +20,8 @@ public class Answer
     }
 
     @Override
-    public String toString() {
+    public String toString()
+    {
         return this.number1 + " " + this.operator + " " + this.number2 + " = " + this.answer;
     }
 }

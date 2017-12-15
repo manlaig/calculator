@@ -2047,9 +2047,18 @@ containing a value of this type.
         public static final int abc_shareactionprovider_share_with_application=0x7f060011;
         public static final int abc_toolbar_collapse_description=0x7f060012;
         public static final int app_name=0x7f060021;
+        public static final int eight=0x7f060022;
+        public static final int five=0x7f060023;
+        public static final int four=0x7f060024;
+        public static final int nine=0x7f060025;
+        public static final int one=0x7f060026;
         public static final int search_menu_title=0x7f060013;
+        public static final int seven=0x7f060027;
+        public static final int six=0x7f060028;
         public static final int status_bar_notification_info_overflow=0x7f060014;
-        public static final int text=0x7f060022;
+        public static final int three=0x7f060029;
+        public static final int two=0x7f06002a;
+        public static final int zero=0x7f06002b;
     }
     public static final class style {
         public static final int AlertDialog_AppCompat=0x7f08009f;

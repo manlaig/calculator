@@ -68,18 +68,18 @@
 
         <Button
             style="@style/numberButtons"
-            android:text="7"
+            android:text="@string/seven"
             android:onClick="set7"/>
 
         <Button
             style="@style/numberButtons"
-            android:text="8"
+            android:text="@string/eight"
             android:layout_marginLeft="-5.5dp"
             android:onClick="set8"/>
 
         <Button
             style="@style/numberButtons"
-            android:text="9"
+            android:text="@string/nine"
             android:layout_marginLeft="-5.5dp"
             android:onClick="set9"/>
 
@@ -102,12 +102,12 @@
 
         <Button
             style="@style/numberButtons"
-            android:text="4"
+            android:text="@string/four"
             android:onClick="set4" />
 
         <Button
             style="@style/numberButtons"
-            android:text="5"
+            android:text="@string/five"
             android:layout_marginLeft="-5.5dp"
             android:onClick="set5" />
 
@@ -116,7 +116,7 @@
             android:id="@+id/button5"
             android:layout_marginLeft="-5.5dp"
             android:onClick="set6"
-            android:text="6" />
+            android:text="@string/six" />
 
         <Button
             style="@style/signButtons"
@@ -137,12 +137,12 @@
 
         <Button
             style="@style/numberButtons"
-            android:text="1"
+            android:text="@string/one"
             android:onClick="set1" />
 
         <Button
             style="@style/numberButtons"
-            android:text="2"
+            android:text="@string/two"
             android:layout_marginLeft="-5.5dp"
             android:onClick="set2" />
 
@@ -151,7 +151,7 @@
             android:id="@+id/button6"
             android:layout_marginLeft="-5.5dp"
             android:onClick="set3"
-            android:text="3" />
+            android:text="@string/three" />
 
         <Button
             style="@style/signButtons"
@@ -172,7 +172,7 @@
 
         <Button
             style="@style/signButtons"
-            android:text="0"
+            android:text="@string/zero"
             android:layout_weight="1.94"
             android:textSize="55sp"
             android:background="#82B1FF"

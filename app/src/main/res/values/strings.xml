@@ -10,4 +10,12 @@
     <string name="eight">8</string>
     <string name="nine">9</string>
     <string name="zero">0</string>
+    <string name="sto">STO></string>
+    <string name="percentage">%</string>
+    <string name="divide">/</string>
+    <string name="multiply">x</string>
+    <string name="minus">-</string>
+    <string name="plus">+</string>
+    <string name="equals">=</string>
+    <string name="point">.</string>
 </resources>

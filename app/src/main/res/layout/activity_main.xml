@@ -33,7 +33,7 @@
 
         <Button
             style="@style/signButtons"
-            android:text="sto>"
+            android:text="@string/sto"
             android:textSize="30sp"
             android:layout_marginLeft="-5.5dp"
             android:layout_marginBottom="-5.5dp"
@@ -42,7 +42,7 @@
 
         <Button
             style="@style/signButtons"
-            android:text="%"
+            android:text="@string/percentage"
             android:textSize="45sp"
             android:layout_marginLeft="-5.5dp"
             android:layout_marginBottom="-5.5dp"
@@ -51,7 +51,7 @@
 
         <Button
             style="@style/signButtons"
-            android:text="/"
+            android:text="@string/divide"
             android:textSize="45sp"
             android:layout_marginLeft="-5.5dp"
             android:layout_marginBottom="-5.5dp"
@@ -85,7 +85,7 @@
 
         <Button
             style="@style/signButtons"
-            android:text="X"
+            android:text="@string/multiply"
             android:textSize="35sp"
             android:layout_marginLeft="-5.5dp"
             android:layout_marginTop="-5dp"
@@ -120,7 +120,7 @@
 
         <Button
             style="@style/signButtons"
-            android:text="-"
+            android:text="@string/minus"
             android:textSize="60sp"
             android:layout_marginLeft="-5.5dp"
             android:layout_marginBottom="-5.5dp"
@@ -155,7 +155,7 @@
 
         <Button
             style="@style/signButtons"
-            android:text="+"
+            android:text="@string/plus"
             android:textSize="55sp"
             android:layout_marginLeft="-5.5dp"
             android:layout_marginTop="-5dp"
@@ -182,7 +182,7 @@
         <Button
             style="@style/signButtons"
             android:background="#82B1FF"
-            android:text="."
+            android:text="@string/point"
             android:textSize="70sp"
             android:layout_marginLeft="-5.5dp"
             android:layout_marginTop="-5dp"
@@ -190,7 +190,7 @@
 
         <Button
             style="@style/signButtons"
-            android:text="="
+            android:text="@string/equals"
             android:textSize="60sp"
             android:layout_marginLeft="-5.5dp"
             android:layout_marginTop="-5dp"
